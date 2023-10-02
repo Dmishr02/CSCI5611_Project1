@@ -108,7 +108,7 @@ void setup(){
   }
   
   //Loading Fonts
-  font1 = createFont("Agency FB Bold", 70);
+  font1 = loadFont("AgencyFB-Bold-70.vlw");
   font2 = loadFont("OCRAExtended-48.vlw");
   
   
@@ -122,7 +122,8 @@ void setup(){
   gameover = new SoundFile(this, "gameover.wav");
   circlehit = new SoundFile(this, "hit.mp3");
   ballhit = new SoundFile(this, "ballhit.mp3");
-  launch = new SoundFile(this, "launch.mp3");
+  // launch = new SoundFile(this, "launch.mp3");
+  launch = new SoundFile(this, "launch.wav");
   
   
   
