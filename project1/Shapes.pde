@@ -227,7 +227,7 @@ public class Ball extends Circle {
             // find the linear velocity of the point on the flipper
             Vec2 radius = closest.subtract_new(f.verts0[0]);
             // scale the radius to avoid extreme speed
-            radius.mul(1.0 / 70.0);
+            radius.mul(1.0 / 100.0);
             Vec2 flip_v = new Vec2(-radius.y, radius.x).mul_new(f.ang_vel);
             if (f.negative) flip_v.mul(-1);
             // calculate new velocity using conservation of momentum
@@ -374,7 +374,7 @@ public class Flipper {
     public float min_angle = 0;
     public float max_angle = radians(45);
     // angular velocity
-    public float ang_vel_max = 7;
+    public float ang_vel_max = 10;
     public float ang_vel = 0;
     private boolean negative = true;
     public boolean light = false;
